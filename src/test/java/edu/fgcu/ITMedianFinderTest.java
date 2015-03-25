@@ -21,14 +21,12 @@ public class ITMedianFinderTest {
 	@Before
 	public void setup(){
 		minHeap = new HeapTree<Integer>(CAPACITY/2+1, new Comparator<Integer>(){
-			@Override
 			public int compare(Integer o1, Integer o2) {
 				return o2.compareTo(o1);
 			}
 		});
 
 		maxHeap = new HeapTree<Integer>(CAPACITY/2+1, new Comparator<Integer>(){
-			@Override
 			public int compare(Integer o1, Integer o2) {
 				return o1.compareTo(o2);
 			}
